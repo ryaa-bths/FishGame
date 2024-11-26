@@ -10,10 +10,19 @@ public class Card{
 
 
 
-    public Card(int suit, int rank){  //new constructor
-        this.suit = suit;
-        this.rank = rank;
+    //public Card(int rank, int suit){  //new constructor
+    //    this.rank = rank;
+    //    this.suit = suit;
+    //}
 
+    public Card(int rank, String wordSuit){  //new constructor
+        this.rank = rank;
+        this.wordSuit = wordSuit;
+    }
+
+    public Card(int rank, int suit){
+        this.rank = rank;
+        this.wordSuit = setSuitIndex(suit);
     }
 
     //public void Card(String wordSuit, int rank){
@@ -23,7 +32,8 @@ public class Card{
     //}
 
     public String setSuitIndex(int index){
-        return suitList[index]; //number inside is index of value
+        wordSuit = suitList[index];
+        return wordSuit; //number inside is index of value
     }
 
     public int getRank(int value){
@@ -31,7 +41,7 @@ public class Card{
     }
 
     public String toString() {
-        System.out.println(suit + rank);
+        System.out.println(rank +" " + wordSuit);
         return "AHHHH";
     }
 

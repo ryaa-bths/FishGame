@@ -1,4 +1,4 @@
-public class Player{
+public class Game{
     //private
 
     //public Player(){

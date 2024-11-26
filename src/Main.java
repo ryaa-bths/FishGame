@@ -10,6 +10,9 @@ public class Main {
         Deck testDeck = new Deck();
         testDeck.buildDeck();
 
+        //testDeck.toString();
+
+        testDeck.shuffle();
         testDeck.toString();
 
 
