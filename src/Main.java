@@ -7,6 +7,11 @@ public class Main {
         Scanner user = new Scanner("");
         System.out.println("Hello world!");
 
+        Deck testDeck = new Deck();
+        testDeck.buildDeck();
+
+        testDeck.toString();
+
 
     }
 }

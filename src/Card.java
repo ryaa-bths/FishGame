@@ -4,17 +4,30 @@ public class Card{
 
     //suitList = ["diamonds", "clubs", "hearts", "spades"];
     private int suit;
+    private String wordSuit;
     private int rank;
 
 
-    public void card(int suit, int rank){
+
+
+    public Card(int suit, int rank){  //new constructor
         this.suit = suit;
         this.rank = rank;
 
     }
 
-    public String setIndex(int i){
-        return suitList[i]; //number inside is index of value
+    //public void Card(String wordSuit, int rank){
+    //    this.wordSuit = wordSuit;
+    //    this.rank = rank;
+
+    //}
+
+    public String setSuitIndex(int index){
+        return suitList[index]; //number inside is index of value
+    }
+
+    public int getRank(int value){
+        return value;
     }
 
     public String toString() {
