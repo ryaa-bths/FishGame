@@ -19,12 +19,21 @@ public class Deck{
     }
 
     public void shuffle(){
-        for (int i = 0; i < 4; i++){
-            int s = (deck.size());  //either restrict shuffle range, or +shuffle twice
+        int x (int)(Math.random() * 99);
+        int s = (deck.size());
+        int i = 0;
+        while (s >=0) {
+            if  (x < 53){
+                for (i; i < s; i++){ //if --> s-i 
+            //int s = (deck.size());  //either restrict shuffle range, or +shuffle twice
             while (s >=0) {//iterate and restrict range of shuffle, like appended parts unaffected
                 s = (int)(Math.random() * (s + 1));
                 deck.add(deck.remove(s));   //take& remove element at index, add to back
                 s--;
+                }
+            }
+            else {
+                x -= 45-i; //else ^i return 0 over 45
             }
         }
     }
