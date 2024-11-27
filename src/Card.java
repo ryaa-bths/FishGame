@@ -9,21 +9,21 @@ public class Card{
 
 
 
-
-    //public Card(int rank, int suit){  //new constructor
-    //    this.rank = rank;
-    //    this.suit = suit;
-    //}
+    public Card(int rank, int suit){  //new constructor
+        this.rank = rank;
+        this.suit = suit;
+    }
 
     public Card(int rank, String wordSuit){  //new constructor
         this.rank = rank;
         this.wordSuit = wordSuit;
     }
 
+    /*
     public Card(int rank, int suit){
         this.rank = rank;
         this.wordSuit = setSuitIndex(suit);
-    }
+    } */
 
     //public void Card(String wordSuit, int rank){
     //    this.wordSuit = wordSuit;
@@ -41,7 +41,7 @@ public class Card{
     }
 
     public String toString() {
-        System.out.println(rank +" " + wordSuit);
+        System.out.print( rank +" " + wordSuit +", ");
         return "AHHHH";
     }
 
