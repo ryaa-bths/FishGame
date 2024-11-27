@@ -41,7 +41,7 @@ public class Card{
     }
 
     public String toString() {
-        System.out.print( rank +" " + wordSuit +", ");
+        System.out.print( rank +" " + wordSuit +",  ");
         return "AHHHH";
     }
 

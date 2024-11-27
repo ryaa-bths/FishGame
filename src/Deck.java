@@ -64,7 +64,7 @@ public class Deck{
                 deckMatrix[i][j] = (deck.get(i+j) );  //convert value to input at index ??
 //system print +" ,
             }
-            /n
+            "/n"
         }
         System.out.println(deckMatrix[][]);
 */
