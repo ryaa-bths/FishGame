@@ -36,16 +36,28 @@ public class Card{
         return wordSuit; //number inside is index of value
     }
 
+    //public static void getCard(){
+    //    getRank();
+    //    getSuit();
+    //}
+
+    //public static getRank(){
+
+    //}
+
     public int getRank(int value){
         return value;
     }
 
     public String toString() {
-        System.out.print( rank +" " + wordSuit +",  ");
-        return "AHHHH";
+
+        return  rank +" " + suit +",  ";
     }
 
-
+    public static void main(String[] args){
+        Card myCard = new Card(4, 4);
+        System.out.println(myCard);
+    }
     //public
 
 }
